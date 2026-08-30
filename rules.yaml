@@ -1,0 +1,4 @@
+rules:
+  - old_symbol: append
+    new_symbol: concat
+    description: "DataFrame.append() removed in pandas 2.0, use pd.concat() instead"
