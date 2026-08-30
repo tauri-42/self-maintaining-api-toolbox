@@ -1,4 +1,9 @@
 rules:
   - old_symbol: append
+    shape: wrap_as_list_call
+    new_namespace: pd
     new_symbol: concat
-    description: "DataFrame.append() removed in pandas 2.0, use pd.concat() instead"
+
+  - old_symbol: ix
+    shape: rename_passthrough
+    new_symbol: iloc
